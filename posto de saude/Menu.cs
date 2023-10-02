@@ -24,68 +24,80 @@ namespace posto_de_saude
             return Convert.ToInt32(Console.ReadLine());
         }
 
-        public static void RespostaMenu()
+        public static void MenuCrud()
         {
-            switch (Menu.MenuPrinciapal())
+            Console.Clear();
+            switch (MenuPrinciapal())
             {
                 case 1:
                     Console.Clear();
                     switch (MenuPessoa())
-            {
-                case 1:
+                    {
+                        case 1:
+                            Cadastro.CadastroPessoa();
+                            break;
+                        case 0:
+                            MenuCrud();
+                            break;
+                    }
+                break;
+            case 2:
+                    switch (MenuFuncionario())
+                    {
+                        case 1:
+                            Cadastro.CadastroFuncionario();
+                            break;
+                        case 0:
+                            MenuCrud();
+                            break;
+                    }
+            break;
+            case 3:
                     Console.Clear();
-                    Cadastro.CadastroPessoa();
+                    switch (MenuMaterial())
+                    {
+                        case 1:
+                            Cadastro.CadastroMaterial();
+                            break;
+                        case 0:
+                            MenuCrud();
+                            break;
+                    }
+                    break;
+            case 4:
+                    Console.Clear();
+                    switch (MenuMedicamento())
+                    {
+                        case 1:
+                            Cadastro.CadastroMedicamento();
+                            break;
+                        case 0:
+                            MenuCrud();
+                            break;
+                    }
+             break;
+             case 5:
+                    Console.Clear();
+                    switch (MenuTriagem())
+                    {
+                        case 1:
+                            Cadastro.CadastroTriagem();
+                            break;
+                        case 0:
+                            MenuCrud();
+                            break;
+                    }
+                    break;
+                            case 0:
+                            Console.WriteLine("Falow");
                     break;
             }
-            break;
-                case 2:
-                    Console.Clear();
-            switch (MenuFuncionario())
-            {
-                case 1:
-                    Console.Clear();
-                    Cadastro.CadastroFuncionario();
-                    break;
-            }
-            break;
-                case 3:
-                    Console.Clear();
-            switch (MenuMaterial())
-            {
-                case 1:
-                    Console.Clear();
-                    Cadastro.CadastroMaterial();
-                    break;
-            }
-            break;
-                    case 4:
-                    Console.Clear();
-            switch (MenuMedicamento())
-            {
-                case 1:
-                    Console.Clear();
-                    Cadastro.CadastroMedicamento();
-                    break;
-            }
-            break;
-                    case 5:
-                    Console.Clear();
-            switch (MenuTriagem())
-            {
-                case 1:
-                    Console.Clear();
-                    Cadastro.CadastroTriagem();
-                    break;
-            }
-            break;
-                    case 0:
-                    Console.WriteLine("Falow");
-            break;
         }
-    }
 
-        public static int MenuPessoa()
+        public static int MenuPessoa(string mensagem = "")
         {
+            Console.Clear();
+            Console.WriteLine(mensagem);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Pacientes ***");
             Console.ResetColor();
@@ -94,12 +106,14 @@ namespace posto_de_saude
             Console.WriteLine("2 - Visualizar pacientes");
             Console.WriteLine("3 - Editar cadastro de pacientes");
             Console.WriteLine("4 - Excluir pacientes");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Voltar");
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public static int MenuFuncionario()
+        public static int MenuFuncionario(string mensagem = "")
         {
+            Console.Clear();
+            Console.WriteLine(mensagem);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Funcionários ***");
             Console.ResetColor();
@@ -108,12 +122,14 @@ namespace posto_de_saude
             Console.WriteLine("2 - Visualizar funcionário");
             Console.WriteLine("3 - Editar cadastro de funcionários");
             Console.WriteLine("4 - Demitir funcionários");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Voltar");
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public static int MenuMaterial()
+        public static int MenuMaterial(string mensagem = "")
         {
+            Console.Clear();
+            Console.WriteLine(mensagem);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Materiais ***");
             Console.ResetColor();
@@ -122,12 +138,14 @@ namespace posto_de_saude
             Console.WriteLine("2 - Visualizar materiais");
             Console.WriteLine("3 - Editar materiais");
             Console.WriteLine("4 - Excluir materiais");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Voltar");
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public static int MenuMedicamento()
+        public static int MenuMedicamento(string mensagem = "")
         {
+            Console.Clear();
+            Console.WriteLine(mensagem);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Medicamentos ***");
             Console.ResetColor();
@@ -136,12 +154,14 @@ namespace posto_de_saude
             Console.WriteLine("2 - Visualizar medicamento");
             Console.WriteLine("3 - Editar cadastro de medicamento");
             Console.WriteLine("4 - excluir medicamento");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Voltar");
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public static int MenuTriagem()
+        public static int MenuTriagem(string mensagem = "")
         {
+            Console.Clear();
+            Console.WriteLine(mensagem);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Triagem ***");
             Console.ResetColor();
@@ -150,7 +170,7 @@ namespace posto_de_saude
             Console.WriteLine("2 - Visualizar triagens");
             Console.WriteLine("3 - Editar triagem");
             Console.WriteLine("4 - excluir triagem");
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Voltar");
 
             return Convert.ToInt32(Console.ReadLine());
         }

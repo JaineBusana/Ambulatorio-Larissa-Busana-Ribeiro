@@ -17,7 +17,7 @@ namespace posto_de_saude
             Funcionario funcionario1 = new Funcionario("João", 20, "Rua Humaitá", "Técnico de Enfermagem", "Matutino", 1235);
 
 
-            Menu.RespostaMenu();
+            Menu.MenuCrud();
 
         }
     }

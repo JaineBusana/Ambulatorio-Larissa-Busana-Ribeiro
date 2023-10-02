@@ -10,6 +10,7 @@ namespace posto_de_saude
     {
         public static void CadastroPessoa()
         {
+            Console.Clear();
             Pessoa novaPessoa = new Pessoa();
             Console.WriteLine("Informe o nome do funcionário:");
             novaPessoa.Nome = Console.ReadLine();
@@ -17,9 +18,14 @@ namespace posto_de_saude
             novaPessoa.Idade = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Rua:");
             novaPessoa.Rua = Console.ReadLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Menu.MenuPessoa("Paciente cadastrado com sucesso!\n");
+            Console.ResetColor();
         }
         public static void CadastroFuncionario()
         {
+            Console.Clear();
             Console.WriteLine("Informe o nome do funcionário:");
             string nomeFuncionario = Console.ReadLine();
             Console.WriteLine("Idade:");
@@ -35,10 +41,15 @@ namespace posto_de_saude
 
             Funcionario novoFuncionario = new Funcionario(nomeFuncionario, idadeFuncionario, ruaFuncionario, 
                 cargoFuncionario, turnoFuncionario, matriculaFuncionario);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Menu.MenuFuncionario("Funcionário cadastrado com sucesso!\n");
+            Console.ResetColor();
         }
 
         public static void CadastroMaterial()
         {
+            Console.Clear();
             Material novoMaterial = new Material();
             Console.WriteLine("Informe o nome do material:");
             novoMaterial.Nome = Console.ReadLine();
@@ -50,10 +61,15 @@ namespace posto_de_saude
             novoMaterial.MesValidade = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Informe seu ano de validade:");
             novoMaterial.AnoValidade = Convert.ToInt32(Console.ReadLine());
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Menu.MenuMaterial("Material cadastrado com sucesso!\n");
+            Console.ResetColor();
         }
 
         public static void CadastroMedicamento()
         {
+            Console.Clear();
             Console.WriteLine("Informe o nome do medicamento:");
             string nomeMedicamento = Console.ReadLine();
             Console.WriteLine("Quantidade no estoque:");
@@ -71,10 +87,15 @@ namespace posto_de_saude
 
             Medicamento novoMedicamento = new Medicamento(nomeMedicamento, qtdEstoqueMedicamento, indicacaoMedicamento, 
                 mesValidadeMedicamento, anoValidadeMedicamento, dosagemMedicamento, viaDeAdministracaoMedicamento);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Menu.MenuMedicamento("Medicamento cadastrado com sucesso!\n");
+            Console.ResetColor();
         }
 
         public static void CadastroTriagem()
         {
+            Console.Clear();
             Console.WriteLine("Informe o nome do paciente:");
             // vai ter que buscar o arquivo de pacientes
             string paciente = Console.ReadLine();
@@ -90,6 +111,10 @@ namespace posto_de_saude
             int saturacao = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Quais os sintomas do paciente:");
             string sintomas = Console.ReadLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Menu.MenuTriagem("Triagem cadastrada com sucesso!\n");
+            Console.ResetColor();
         }
 
 
