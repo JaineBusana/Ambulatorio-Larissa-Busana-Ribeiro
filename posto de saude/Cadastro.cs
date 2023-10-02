@@ -8,7 +8,7 @@ namespace posto_de_saude
 {
     internal class Cadastro
     {
-        public void CadastroPessoa()
+        public static void CadastroPessoa()
         {
             Pessoa novaPessoa = new Pessoa();
             Console.WriteLine("Informe o nome do funcionário:");
@@ -18,7 +18,7 @@ namespace posto_de_saude
             Console.WriteLine("Rua:");
             novaPessoa.Rua = Console.ReadLine();
         }
-        public void CadastroFuncionario()
+        public static void CadastroFuncionario()
         {
             Console.WriteLine("Informe o nome do funcionário:");
             string nomeFuncionario = Console.ReadLine();
@@ -37,7 +37,7 @@ namespace posto_de_saude
                 cargoFuncionario, turnoFuncionario, matriculaFuncionario);
         }
 
-        public void CadastroMaterial()
+        public static void CadastroMaterial()
         {
             Material novoMaterial = new Material();
             Console.WriteLine("Informe o nome do material:");
@@ -52,7 +52,7 @@ namespace posto_de_saude
             novoMaterial.AnoValidade = Convert.ToInt32(Console.ReadLine());
         }
 
-        public void CadastroMedicamento()
+        public static void CadastroMedicamento()
         {
             Console.WriteLine("Informe o nome do medicamento:");
             string nomeMedicamento = Console.ReadLine();
@@ -73,7 +73,7 @@ namespace posto_de_saude
                 mesValidadeMedicamento, anoValidadeMedicamento, dosagemMedicamento, viaDeAdministracaoMedicamento);
         }
 
-        public void CadastroTriagem()
+        public static void CadastroTriagem()
         {
             Console.WriteLine("Informe o nome do paciente:");
             // vai ter que buscar o arquivo de pacientes

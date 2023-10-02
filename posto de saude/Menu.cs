@@ -8,7 +8,7 @@ namespace posto_de_saude
 {
     internal class Menu
     {
-        public int MenuPrinciapal()
+        public static int MenuPrinciapal()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("*** Ambulatório Larissa Busana Ribeiro ***");
@@ -24,7 +24,67 @@ namespace posto_de_saude
             return Convert.ToInt32(Console.ReadLine());
         }
 
-        public int MenuPessoa()
+        public static void RespostaMenu()
+        {
+            switch (Menu.MenuPrinciapal())
+            {
+                case 1:
+                    Console.Clear();
+                    switch (MenuPessoa())
+            {
+                case 1:
+                    Console.Clear();
+                    Cadastro.CadastroPessoa();
+                    break;
+            }
+            break;
+                case 2:
+                    Console.Clear();
+            switch (MenuFuncionario())
+            {
+                case 1:
+                    Console.Clear();
+                    Cadastro.CadastroFuncionario();
+                    break;
+            }
+            break;
+                case 3:
+                    Console.Clear();
+            switch (MenuMaterial())
+            {
+                case 1:
+                    Console.Clear();
+                    Cadastro.CadastroMaterial();
+                    break;
+            }
+            break;
+                    case 4:
+                    Console.Clear();
+            switch (MenuMedicamento())
+            {
+                case 1:
+                    Console.Clear();
+                    Cadastro.CadastroMedicamento();
+                    break;
+            }
+            break;
+                    case 5:
+                    Console.Clear();
+            switch (MenuTriagem())
+            {
+                case 1:
+                    Console.Clear();
+                    Cadastro.CadastroTriagem();
+                    break;
+            }
+            break;
+                    case 0:
+                    Console.WriteLine("Falow");
+            break;
+        }
+    }
+
+        public static int MenuPessoa()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Pacientes ***");
@@ -38,7 +98,7 @@ namespace posto_de_saude
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public int MenuFuncionario()
+        public static int MenuFuncionario()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Funcionários ***");
@@ -52,7 +112,7 @@ namespace posto_de_saude
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public int MenuMaterial()
+        public static int MenuMaterial()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Materiais ***");
@@ -66,7 +126,7 @@ namespace posto_de_saude
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public int MenuMedicamento()
+        public static int MenuMedicamento()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Medicamentos ***");
@@ -80,7 +140,7 @@ namespace posto_de_saude
 
             return Convert.ToInt32(Console.ReadLine());
         }
-        public int MenuTriagem()
+        public static int MenuTriagem()
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("*** Triagem ***");
