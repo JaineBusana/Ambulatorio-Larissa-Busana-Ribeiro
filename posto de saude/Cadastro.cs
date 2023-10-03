@@ -8,20 +8,23 @@ namespace posto_de_saude
 {
     internal class Cadastro
     {
-        public static void CadastroPessoa()
+        
+        public static void CadastroPaciente()
         {
+            
             Console.Clear();
             Pessoa novaPessoa = new Pessoa();
-            Console.WriteLine("Informe o nome do funcionário:");
+            Console.WriteLine("Informe o nome do paciente:");
             novaPessoa.Nome = Console.ReadLine();
             Console.WriteLine("Idade:");
             novaPessoa.Idade = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Rua:");
             novaPessoa.Rua = Console.ReadLine();
-
             Console.ForegroundColor = ConsoleColor.Green;
-            Menu.MenuPessoa("Paciente cadastrado com sucesso!\n");
+            Menu.MenuPaciente("Paciente cadastrado com sucesso!\n");
             Console.ResetColor();
+            
+
         }
         public static void CadastroFuncionario()
         {
