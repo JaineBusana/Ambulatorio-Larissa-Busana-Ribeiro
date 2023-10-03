@@ -8,8 +8,13 @@ namespace posto_de_saude
 {
     internal class Cadastro
     {
+<<<<<<< HEAD
         
         public static void CadastroPaciente()
+=======
+=
+        public static void CadastroPessoa()
+>>>>>>> 336ab931645f55a656b30857d6d1c0fc964852b5
         {
             
             Console.Clear();
