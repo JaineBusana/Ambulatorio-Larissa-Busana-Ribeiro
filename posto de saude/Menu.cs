@@ -31,10 +31,10 @@ namespace posto_de_saude
             {
                 case 1:
                     Console.Clear();
-                    switch (MenuPessoa())
+                    switch (MenuPaciente())
                     {
                         case 1:
-                            Cadastro.CadastroPessoa();
+                            Cadastro.CadastroPaciente();
                             break;
                         case 0:
                             MenuCrud();
@@ -94,7 +94,7 @@ namespace posto_de_saude
             }
         }
 
-        public static int MenuPessoa(string mensagem = "")
+        public static int MenuPaciente(string mensagem = "")
         {
             Console.Clear();
             Console.WriteLine(mensagem);
