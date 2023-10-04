@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jaine.busana\\.nuget\\packages\\": {},
+    "C:\\Users\\larissa.costa3\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj",
+      "projectUniqueName": "C:\\Users\\larissa.costa3\\OneDrive - SENAC-SC\\C#\\Postinho de saúde\\Clone Git\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
       "projectName": "posto de saude",
-      "projectPath": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj",
-      "packagesPath": "C:\\Users\\jaine.busana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\obj\\",
+      "projectPath": "C:\\Users\\larissa.costa3\\OneDrive - SENAC-SC\\C#\\Postinho de saúde\\Clone Git\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+      "packagesPath": "C:\\Users\\larissa.costa3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\larissa.costa3\\OneDrive - SENAC-SC\\C#\\Postinho de saúde\\Clone Git\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jaine.busana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\larissa.costa3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
