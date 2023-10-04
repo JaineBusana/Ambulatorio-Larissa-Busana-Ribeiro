@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thiago.ribeiro2\\OneDrive - SENAC-SC\\Orientação a objeto\\posto de saude\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj": {}
+    "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thiago.ribeiro2\\OneDrive - SENAC-SC\\Orientação a objeto\\posto de saude\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj": {
+    "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thiago.ribeiro2\\OneDrive - SENAC-SC\\Orientação a objeto\\posto de saude\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+        "projectUniqueName": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj",
         "projectName": "posto de saude",
-        "projectPath": "C:\\Users\\thiago.ribeiro2\\OneDrive - SENAC-SC\\Orientação a objeto\\posto de saude\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
-        "packagesPath": "C:\\Users\\thiago.ribeiro2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thiago.ribeiro2\\OneDrive - SENAC-SC\\Orientação a objeto\\posto de saude\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
+        "projectPath": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\posto de saude.csproj",
+        "packagesPath": "C:\\Users\\jaine.busana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaine.busana\\OneDrive - SENAC-SC\\Área de Trabalho\\trabalho oo\\posto de saude\\posto de saude\\posto de saude\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thiago.ribeiro2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jaine.busana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

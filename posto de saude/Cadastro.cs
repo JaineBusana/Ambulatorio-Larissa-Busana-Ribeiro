@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace posto_de_saude
 {
     internal class Cadastro
-    {
-=
-        public static void CadastroPessoa()
+    {        public static void CadastroPessoa()
         {
             Console.Clear();
             Pessoa novaPessoa = new Pessoa();
