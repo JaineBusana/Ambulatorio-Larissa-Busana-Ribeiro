@@ -28,3 +28,18 @@ C:\Users\jaine.busana\OneDrive - SENAC-SC\Área de Trabalho\trabalho oo\posto de
 C:\Users\jaine.busana\OneDrive - SENAC-SC\Área de Trabalho\trabalho oo\posto de saude\posto de saude\posto de saude\obj\Debug\net6.0\posto de saude.pdb
 C:\Users\jaine.busana\OneDrive - SENAC-SC\Área de Trabalho\trabalho oo\posto de saude\posto de saude\posto de saude\obj\Debug\net6.0\posto de saude.genruntimeconfig.cache
 C:\Users\jaine.busana\OneDrive - SENAC-SC\Área de Trabalho\trabalho oo\posto de saude\posto de saude\posto de saude\obj\Debug\net6.0\ref\posto de saude.dll
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.csproj.AssemblyReference.cache
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.AssemblyInfoInputs.cache
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.AssemblyInfo.cs
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.csproj.CoreCompileInputs.cache
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.dll
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\refint\posto de saude.dll
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.pdb
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\bin\Debug\net6.0\posto de saude.exe
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\bin\Debug\net6.0\posto de saude.deps.json
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\bin\Debug\net6.0\posto de saude.runtimeconfig.json
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\bin\Debug\net6.0\posto de saude.dll
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\bin\Debug\net6.0\posto de saude.pdb
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.genruntimeconfig.cache
+C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\ref\posto de saude.dll

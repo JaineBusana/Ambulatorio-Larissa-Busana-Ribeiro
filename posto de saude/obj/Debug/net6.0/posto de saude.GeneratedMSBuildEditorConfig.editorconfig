@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = posto_de_saude
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\larissa.costa3\OneDrive - SENAC-SC\C#\Postinho de saúde\Clone Git\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\
+=======
+build_property.ProjectDir = C:\Users\thiago.ribeiro2\OneDrive - SENAC-SC\Orientação a objeto\posto de saude\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\
+>>>>>>> 2c2f2c3c277cba6df56d4309631aa1e9137d1162
