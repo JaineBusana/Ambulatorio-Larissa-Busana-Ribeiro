@@ -8,5 +8,6 @@ namespace posto_de_saude
 {
     internal class TriagemModel
     {
+
     }
 }

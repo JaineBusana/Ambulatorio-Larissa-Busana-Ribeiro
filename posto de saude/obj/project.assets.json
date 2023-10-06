@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jaine.busana\\.nuget\\packages\\": {},
+    "C:\\Users\\thiago.ribeiro2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaine.busana\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+      "projectUniqueName": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
       "projectName": "posto de saude",
-      "projectPath": "C:\\Users\\jaine.busana\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
-      "packagesPath": "C:\\Users\\jaine.busana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaine.busana\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
+      "projectPath": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+      "packagesPath": "C:\\Users\\thiago.ribeiro2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jaine.busana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thiago.ribeiro2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -51,4 +51,27 @@ namespace posto_de_saude
             this.Sintoma = sintoma;
         }
     }
+
+public void Popular()
+    {
+        console.writeline("informe o nome do paciente:");
+        // vai ter que buscar o arquivo de pacientes
+        string paciente = console.readline();
+        console.writeline("informe o peso do paciente:");
+        int peso = convert.toint32(console.readline());
+        console.writeline("pressão arterial:");
+        int pressao = convert.toint32(console.readline());
+        console.writeline("altura:");
+        int altura = convert.toint32(console.readline());
+        console.writeline("temperatura:");
+        int temperatura = convert.toint32(console.readline());
+        console.writeline("saturação:");
+        int saturacao = convert.toint32(console.readline());
+        console.writeline("quais os sintomas do paciente:");
+        string sintomas = console.readline();
+
+    }
+    {
+       
+    
 }
