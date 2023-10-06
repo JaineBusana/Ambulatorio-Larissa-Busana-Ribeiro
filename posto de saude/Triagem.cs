@@ -7,7 +7,7 @@ using System.Windows.Markup;
 
 namespace posto_de_saude
 {
-    internal class Triagem 
+    public class Triagem 
     {
         public Pessoa paciente; 
         private double perimetroCefalico;
@@ -40,38 +40,36 @@ namespace posto_de_saude
         }
         public string Sintoma { get; set; }
 
-        public Triagem(Pessoa paciente, double peso, double pressao, double altura, double temperatura, double saturacao, string sintoma)
+       
+        public void Popular()
         {
-            this.paciente = paciente;
-            this.Peso = peso;
-            this.Pressao = pressao;
-            this.Altura = altura;
-            this.Temperatura = temperatura;
-            this.Saturacao = saturacao;
-            this.Sintoma = sintoma;
+            Console.WriteLine("informe o nome do paciente:");
+            // vai ter que buscar o arquivo de pacientes
+            string paciente = Console.ReadLine();
+            Console.WriteLine("informe o peso do paciente:");
+            int peso = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("pressão arterial:");
+            int pressao = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("altura:");
+            int altura = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("temperatura:");
+            int temperatura = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("saturação:");
+            int saturacao = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("quais os sintomas do paciente:");
+            string sintomas = Console.ReadLine();
+
+        }
+
+        public void Listar()
+        {
+            Console.WriteLine($" Paciente: {paciente} \n Peso:{Peso} \n Pressão:{Pressao}" +
+                $" \n Altura:{Altura} \n Temperatura:{Temperatura} \n Saturação:{Saturacao} \n Sintomas:{Sintoma} ");
         }
     }
 
-public void Popular()
-    {
-        console.writeline("informe o nome do paciente:");
-        // vai ter que buscar o arquivo de pacientes
-        string paciente = console.readline();
-        console.writeline("informe o peso do paciente:");
-        int peso = convert.toint32(console.readline());
-        console.writeline("pressão arterial:");
-        int pressao = convert.toint32(console.readline());
-        console.writeline("altura:");
-        int altura = convert.toint32(console.readline());
-        console.writeline("temperatura:");
-        int temperatura = convert.toint32(console.readline());
-        console.writeline("saturação:");
-        int saturacao = convert.toint32(console.readline());
-        console.writeline("quais os sintomas do paciente:");
-        string sintomas = console.readline();
 
-    }
-    {
+    
        
     
 }

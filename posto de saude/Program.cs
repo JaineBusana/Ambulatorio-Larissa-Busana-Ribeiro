@@ -8,9 +8,7 @@ namespace posto_de_saude
     {
         // menu1: visualizar menu funcionario, visualizar menu produto, visualizar menu medicamento, visualizar menu triagem
         // menu funcionario: CRUD
-        //
-        // alterado pela jai
-        static List<Funcionario> ListaFuncionario()
+
         {
             List<Funcionario> funcionarios = new List<Funcionario>();
             return funcionarios;

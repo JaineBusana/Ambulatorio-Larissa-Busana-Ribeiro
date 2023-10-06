@@ -4,6 +4,10 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 12a595884e4213f07f7d68ab91874ca1027878a5
 //namespace posto_de_saude
 //{
 //    internal class Cadastro

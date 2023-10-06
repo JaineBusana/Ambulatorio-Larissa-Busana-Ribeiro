@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,13 @@ namespace posto_de_saude
 {
     internal class Menu
     {
-        public static int MenuPrinciapal()
+        public static PessoaModel PessoaModel = new PessoaModel();
+        public static FuncionariosModel FuncionariosModel = new FuncionariosModel();
+        public static MaterialModel MaterialModel = new MaterialModel();
+        public static MedicamentosModel MeddicamentosModel = new MedicamentosModel();
+        public static TriagemModel TriagemModel = new TriagemModel();
+
+        public static string MenuPrinciapal()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("*** Ambulatório Larissa Busana Ribeiro ***");
@@ -21,158 +28,123 @@ namespace posto_de_saude
             Console.WriteLine("5 - Menu Triagem");
             Console.WriteLine("0 - Sair");
 
-            return Convert.ToInt32(Console.ReadLine());
+            return Console.ReadLine();
         }
 
-        public static void MenuCrud()
+        public static void MostrarMenuPrincipal()
         {
             Console.Clear();
             switch (MenuPrinciapal())
             {
-                case 1:
-                    Console.Clear();
-                    switch (MenuPaciente())
-                    {
-                        case 1:
-                            Cadastro.CadastroPaciente();
-                            break;
-                        case 0:
-                            MenuCrud();
-                            break;
-                    }
-                break;
-            case 2:
-                    switch (MenuFuncionario())
-                    {
-                        case 1:
-                            Cadastro.CadastroFuncionario();
-                            break;
-                        case 0:
-                            MenuCrud();
-                            break;
-                    }
-            break;
-            case 3:
-                    Console.Clear();
-                    switch (MenuMaterial())
-                    {
-                        case 1:
-                            Cadastro.CadastroMaterial();
-                            break;
-                        case 0:
-                            MenuCrud();
-                            break;
-                    }
+                case "1":
+                    MostrarMenuPaciente();
                     break;
-            case 4:
-                    Console.Clear();
-                    switch (MenuMedicamento())
-                    {
-                        case 1:
-                            Cadastro.CadastroMedicamento();
-                            break;
-                        case 0:
-                            MenuCrud();
-                            break;
-                    }
-             break;
-             case 5:
-                    Console.Clear();
-                    switch (MenuTriagem())
-                    {
-                        case 1:
-                            Cadastro.CadastroTriagem();
-                            break;
-                        case 0:
-                            MenuCrud();
-                            break;
-                    }
+                case "2":
+                    MostrarMenuFuncionarios();
                     break;
-                            case 0:
-                            Console.WriteLine("Falow");
+                case "3":
+                    MostrarMenuMaterial();
+                    break;
+                case "4":
+                    MostrarMenuMedicamentos();
+                    break;
+                case "5":
+                    MostrarMenuTriagem();
+                    break;
+                case "0":
+                    Console.WriteLine("Até logo!");
+                    return;
+                default:
+                    Console.WriteLine("Opção inválida! \nPrecione qualquer tecla para continuar.");
+                    Console.ReadLine();
+                    MostrarMenuPrincipal();
                     break;
             }
         }
 
-        public static int MenuPaciente(string mensagem = "")
+        public static string MenuCrud()
         {
-            Console.Clear();
-            Console.WriteLine(mensagem);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*** Pacientes ***");
-            Console.ResetColor();
-            Console.WriteLine("Olá! Selecione o numero da opção que deseja:");
-            Console.WriteLine("1 - Cadastrar pacientes");
-            Console.WriteLine("2 - Visualizar pacientes");
-            Console.WriteLine("3 - Editar cadastro de pacientes");
-            Console.WriteLine("4 - Excluir pacientes");
+            Console.WriteLine("1 - Cadastrar");
+            Console.WriteLine("2 - Visualizar");
+            Console.WriteLine("3 - Editar");
+            Console.WriteLine("4 - Excluir");
             Console.WriteLine("0 - Voltar");
-
-            return Convert.ToInt32(Console.ReadLine());
+            return Console.ReadLine();
         }
-        public static int MenuFuncionario(string mensagem = "")
+
+        public static void MostrarMenuPaciente(string mensagem = "")
         {
             Console.Clear();
+            Console.WriteLine("Pacientes");
             Console.WriteLine(mensagem);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*** Funcionários ***");
-            Console.ResetColor();
-            Console.WriteLine("Olá! Selecione o numero da opção que deseja:");
-            Console.WriteLine("1 - Cadastrar funcionários");
-            Console.WriteLine("2 - Visualizar funcionário");
-            Console.WriteLine("3 - Editar cadastro de funcionários");
-            Console.WriteLine("4 - Demitir funcionários");
-            Console.WriteLine("0 - Voltar");
+            Console.WriteLine();
+            switch (MenuCrud())
+            {
+                case "1":
+                    PessoaModel.Create();
+                    MostrarMenuPaciente("Paciente adicionado com sucesso!");
+                    break;
+                case "2":
+                    PessoaModel.Read();
+                    Console.WriteLine("Precione qualquer tecla para continuar");
+                    Console.ReadLine();
+                    MostrarMenuPaciente();
+                    break;
+                case "3":
+                    PessoaModel.Update();
+                    MostrarMenuPaciente("Paciente alterado com sucesso!");
+                    break;
+                case "4":
+                    PessoaModel.Delete();
+                    MostrarMenuPaciente("Paciente removido com sucesso!");
+                    break;
+                case "0":
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção invalida");
+                    break;
 
-            return Convert.ToInt32(Console.ReadLine());
+            }
         }
-        public static int MenuMaterial(string mensagem = "")
+
+        public static void MostrarMenuFuncionarios(string mensagem = "")
         {
             Console.Clear();
+            Console.WriteLine("Funcionários");
             Console.WriteLine(mensagem);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*** Materiais ***");
-            Console.ResetColor();
-            Console.WriteLine("Olá! Selecione o numero da opção que deseja:");
-            Console.WriteLine("1 - Cadastrar materiais");
-            Console.WriteLine("2 - Visualizar materiais");
-            Console.WriteLine("3 - Editar materiais");
-            Console.WriteLine("4 - Excluir materiais");
-            Console.WriteLine("0 - Voltar");
+            Console.WriteLine();
+            switch (MenuCrud())
+            {
+                case "1":
+                    FuncionariosModel.Create();
+                    MostrarMenuFuncionarios("Funcionário adicionado com sucesso!");
+                    break;
+                case "2":
+                    PessoaModel.Read();
+                    Console.WriteLine("Precione qualquer tecla para continuar");
+                    Console.ReadLine();
+                    MostrarMenuFuncionarios();
+                    break;
+                case "3":
+                    PessoaModel.Update();
+                    MostrarMenuFuncionarios("Funcionário alterado com sucesso!");
+                    break;
+                case "4":
+                    PessoaModel.Delete();
+                    MostrarMenuFuncionarios("Funcionário removido com sucesso!");
+                    break;
+                case "0":
+                    MostrarMenuFuncionarios();
+                    break;
+                default:
+                    Console.WriteLine("Opção invalida");
+                    break;
 
-            return Convert.ToInt32(Console.ReadLine());
-        }
-        public static int MenuMedicamento(string mensagem = "")
-        {
-            Console.Clear();
-            Console.WriteLine(mensagem);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*** Medicamentos ***");
-            Console.ResetColor();
-            Console.WriteLine("Olá! Selecione o numero da opção que deseja:");
-            Console.WriteLine("1 - Cadastrar medicamento");
-            Console.WriteLine("2 - Visualizar medicamento");
-            Console.WriteLine("3 - Editar cadastro de medicamento");
-            Console.WriteLine("4 - excluir medicamento");
-            Console.WriteLine("0 - Voltar");
+            }
 
-            return Convert.ToInt32(Console.ReadLine());
-        }
-        public static int MenuTriagem(string mensagem = "")
-        {
-            Console.Clear();
-            Console.WriteLine(mensagem);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("*** Triagem ***");
-            Console.ResetColor();
-            Console.WriteLine("Olá! Selecione o numero da opção que deseja:");
-            Console.WriteLine("1 - Cadastrar nova triagem");
-            Console.WriteLine("2 - Visualizar triagens");
-            Console.WriteLine("3 - Editar triagem");
-            Console.WriteLine("4 - excluir triagem");
-            Console.WriteLine("0 - Voltar");
 
-            return Convert.ToInt32(Console.ReadLine());
+
         }
     }
 }
