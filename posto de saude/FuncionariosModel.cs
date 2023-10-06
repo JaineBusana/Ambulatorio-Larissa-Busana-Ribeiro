@@ -10,7 +10,7 @@ namespace posto_de_saude
     {
         private List<Funcionario> funcionarios = new List<Funcionario>();
 
-        public void Creat()
+        public void Create()
         {
             Funcionario funcionario = new Funcionario();
             funcionario.Popular();
