@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    internal class Pessoa
+    public class Pessoa
     {
         protected string nome;
 
