@@ -30,7 +30,7 @@ namespace posto_de_saude
         public void Update()
         {
             Read();
-            Console.WriteLine("Digite o codigo do item a ser alterado:");
+            Console.WriteLine("Digite o código do medicamento a ser alterado:");
             int index = Convert.ToInt32(Console.ReadLine());
             medicamentos[index].Popular();
         }
@@ -38,7 +38,7 @@ namespace posto_de_saude
         public void Delete()
         {
             Read();
-            Console.WriteLine("Digite o codigo do item a ser deletado:");
+            Console.WriteLine("Digite o código do medicamento a ser deletado:");
             int index = Convert.ToInt32(Console.ReadLine());
             medicamentos.RemoveAt(index);
         }
