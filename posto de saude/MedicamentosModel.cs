@@ -6,7 +6,42 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    internal class MedicamentosModel
+    public class MedicamentosModel
     {
+    
+     private List<Medicamento> medicamentos = new List<Medicamento>();
+
+      public void Create()
+        {
+            Medicamento medicamento = new Medicamento();
+            medicamento.Popular();
+            medicamentos.Add(medicamento);
+        }
+
+        public void Read()
+        {
+            for (int i = 0; i < medicamentos.Count; i++)
+            {
+                Console.Write(i);
+                medicamentos[i].Listar();
+            }
+        }
+
+        public void Update()
+        {
+            Read();
+            Console.WriteLine("Digite o codigo do item a ser alterado:");
+            int index = Convert.ToInt32(Console.ReadLine());
+            medicamentos[index].Popular();
+        }
+
+        public void Delete()
+        {
+            Read();
+            Console.WriteLine("Digite o codigo do item a ser deletado:");
+            int index = Convert.ToInt32(Console.ReadLine());
+            medicamentos.RemoveAt(index);
+        }
+
     }
 }

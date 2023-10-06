@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    internal class Material
+    public class Material
     {
         protected string nome;
 
