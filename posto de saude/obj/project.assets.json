@@ -8,23 +8,39 @@
     "net6.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\thiago.ribeiro2\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\larissa.costa3\\.nuget\\packages\\": {},
+>>>>>>> 6c4ec787d6c77d4de6ef780d640a7e81b516d53c
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
       "projectName": "posto de saude",
       "projectPath": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
       "packagesPath": "C:\\Users\\thiago.ribeiro2\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\larissa.costa3\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+      "projectName": "posto de saude",
+      "projectPath": "C:\\Users\\larissa.costa3\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+      "packagesPath": "C:\\Users\\larissa.costa3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\larissa.costa3\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\obj\\",
+>>>>>>> 6c4ec787d6c77d4de6ef780d640a7e81b516d53c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\thiago.ribeiro2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\larissa.costa3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 6c4ec787d6c77d4de6ef780d640a7e81b516d53c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -19,10 +19,10 @@ namespace posto_de_saude
 
         public void Read()
         {
-            for (int i = 0; i < medicamentos.Count; i++)
+            for (int i = 0; i < materiais.Count; i++)
             {
                 Console.Write(i);
-                medicamentos[i].Listar();
+                materiais[i].Listar();
             }
         }
 
@@ -31,7 +31,7 @@ namespace posto_de_saude
             Read();
             Console.WriteLine("Digite o codigo do item a ser alterado:");
             int index = Convert.ToInt32(Console.ReadLine());
-            medicamentos[index].Popular();
+            materiais[index].Popular();
         }
 
         public void Delete()
@@ -39,7 +39,7 @@ namespace posto_de_saude
             Read();
             Console.WriteLine("Digite o codigo do item a ser deletado:");
             int index = Convert.ToInt32(Console.ReadLine());
-            medicamentos.RemoveAt(index);
+            materiais.RemoveAt(index);
         }
     }
 }

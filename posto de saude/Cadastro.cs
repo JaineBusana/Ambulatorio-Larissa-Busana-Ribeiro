@@ -4,7 +4,7 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
-<<<<<<< HEAD
+
 //namespace posto_de_saude
 //{
 //    internal class Cadastro
@@ -92,7 +92,7 @@
 //            Console.WriteLine("Quais os sintomas do paciente:");
 //            string sintomas = Console.ReadLine();
 //        }
-=======
+
 
 
 //    }

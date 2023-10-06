@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "vTjYkUQ0fIY2DUr8GiTEcemAxPYG7FKEuJUBCHY0I+QrzF0CXQ5MVB3xIIEyNl7OgTeKYGygH8Jy/34K7UuKeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\thiago.ribeiro2\\Desktop\\trabalho equipe\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+=======
+  "dgSpecHash": "reLnFNmIBTMOFRqnAOW/dmeBlirasY8l25DVZprFfasrJVqQXldVdnts3+J6SCewgG6YC79x4giEqza//swlHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\larissa.costa3\\source\\Ambulatorio-Larissa-Busana-Ribeiro\\posto de saude\\posto de saude.csproj",
+>>>>>>> 6c4ec787d6c77d4de6ef780d640a7e81b516d53c
   "expectedPackageFiles": [],
   "logs": []
 }
