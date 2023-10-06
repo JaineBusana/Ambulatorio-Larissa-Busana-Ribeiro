@@ -7,7 +7,7 @@ using System.Windows.Markup;
 
 namespace posto_de_saude
 {
-    internal class Triagem 
+    public class Triagem 
     {
         public Pessoa paciente; 
         private double perimetroCefalico;
@@ -40,16 +40,7 @@ namespace posto_de_saude
         }
         public string Sintoma { get; set; }
 
-        public Triagem(Pessoa paciente, double peso, double pressao, double altura, double temperatura, double saturacao, string sintoma)
-        {
-            this.paciente = paciente;
-            this.Peso = peso;
-            this.Pressao = pressao;
-            this.Altura = altura;
-            this.Temperatura = temperatura;
-            this.Saturacao = saturacao;
-            this.Sintoma = sintoma;
-        }
+       
         public void Popular()
         {
             Console.WriteLine("informe o nome do paciente:");
