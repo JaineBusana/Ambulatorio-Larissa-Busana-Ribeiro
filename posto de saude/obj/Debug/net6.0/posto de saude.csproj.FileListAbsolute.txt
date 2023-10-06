@@ -1,0 +1,5 @@
+C:\Users\thiago.ribeiro2\Desktop\trabalho equipe\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.csproj.AssemblyReference.cache
+C:\Users\thiago.ribeiro2\Desktop\trabalho equipe\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thiago.ribeiro2\Desktop\trabalho equipe\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.AssemblyInfoInputs.cache
+C:\Users\thiago.ribeiro2\Desktop\trabalho equipe\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.AssemblyInfo.cs
+C:\Users\thiago.ribeiro2\Desktop\trabalho equipe\Ambulatorio-Larissa-Busana-Ribeiro\posto de saude\obj\Debug\net6.0\posto de saude.csproj.CoreCompileInputs.cache
