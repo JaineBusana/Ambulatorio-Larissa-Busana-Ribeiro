@@ -48,7 +48,8 @@ namespace posto_de_saude
 
         public void Listar()
         {
-            Console.WriteLine($" {Nome} | {QtdEstoque} | {Indicacao} | {MesValidade} | {AnoValidade} ");
+            Console.WriteLine($" Nome do medicamento: {Nome} | Quantidade de estoque: {QtdEstoque} |" +
+                $" Mês de validade: {MesValidade} | Ano de validade: {AnoValidade} | Indicação: {Indicacao} ");
         }
 
     }
