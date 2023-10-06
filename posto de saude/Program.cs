@@ -23,7 +23,54 @@ namespace posto_de_saude
 
 
             Menu.MenuCrud();
+        public static void MostrarMenuMedicamentos(string mensagem = "")
+        {
+            Console.Clear();
+            Console.WriteLine("Medicamentos");
+            Console.WriteLine(mensagem);
+            Console.WriteLine();
+            switch (MenuCrud())
+            {
+                case "1":
+                    MedicamentosModel.Create();
+                    MostrarMenuMedicamentos("Medicamento adicionado com sucesso!");
+                    break;
+                case "2":
+                    MedicamentosModel.Read();
+                    Console.WriteLine("Pressione qualquer tecla para continuar");
+                    Console.ReadLine();
+                    MostrarMenuMedicamentos();
+                    break;
+                case "3":
+                    MedicamentosModel.Update();
+                    MostrarMenuMedicamentos("Medicamento alterado com sucesso!");
+                    break;
+                case "4":
+                    MedicamentosModel.Delete();
+                    MostrarMenuMedicamentos("Medicamento removido com sucesso!");
+                    break;
+                case "0":
+                    MostrarMenuMedicamentos();
+                    break;
+                default:
+                    Console.WriteLine("Opção invalida");
+                    break;
 
+            }
         }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
     }
 }
