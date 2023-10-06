@@ -10,7 +10,7 @@ namespace posto_de_saude
     {
         private List<Pessoa> pacientes = new List<Pessoa>();
 
-        public void Creat()
+        public void Create()
         {
             Pessoa paciente = new Pessoa();
             paciente.Popular();
