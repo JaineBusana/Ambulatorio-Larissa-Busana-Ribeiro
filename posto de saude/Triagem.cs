@@ -45,25 +45,25 @@ namespace posto_de_saude
         {
             Console.WriteLine("informe o nome do paciente:");
             // vai ter que buscar o arquivo de pacientes
-            string paciente = Console.ReadLine();
+            paciente.nome = Console.ReadLine();
             Console.WriteLine("informe o peso do paciente:");
-            int peso = Convert.ToInt32(Console.ReadLine());
+            Peso = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("pressão arterial:");
-            int pressao = Convert.ToInt32(Console.ReadLine());
+            Pressao = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("altura:");
-            int altura = Convert.ToInt32(Console.ReadLine());
+            Altura = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("temperatura:");
-            int temperatura = Convert.ToInt32(Console.ReadLine());
+            Temperatura = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("saturação:");
-            int saturacao = Convert.ToInt32(Console.ReadLine());
+            Saturacao = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("quais os sintomas do paciente:");
-            string sintomas = Console.ReadLine();
+            Sintoma = Console.ReadLine();
 
         }
 
         public void Listar()
         {
-            Console.WriteLine($" Paciente: {paciente} \n Peso:{Peso} \n Pressão:{Pressao}" +
+            Console.WriteLine($" Paciente: {paciente.nome} \n Peso:{Peso} \n Pressão:{Pressao}" +
                 $" \n Altura:{Altura} \n Temperatura:{Temperatura} \n Saturação:{Saturacao} \n Sintomas:{Sintoma} ");
         }
     }

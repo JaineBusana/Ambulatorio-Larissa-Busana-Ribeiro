@@ -8,27 +8,27 @@ namespace posto_de_saude
 {
     public class Pessoa
     {
-        protected string nome;
+        public string nome;
 
-        public string Nome
-        {
-            get 
-            { return nome; } 
-            set 
-            {
-                if (!string.IsNullOrEmpty(value)) 
-                { 
-                nome = value; 
-                }
-            }
-        }
+        //public string Nome
+        //{
+        //    get 
+        //    { return nome; } 
+        //    set 
+        //    {
+        //        if (!string.IsNullOrEmpty(value)) 
+        //        { 
+        //        nome = value; 
+        //        }
+        //    }
+        //}
         public double Idade { get; set; }
         public string Rua { get; set; }
 
         public void Popular()
         {
             Console.WriteLine("Informe o nome do funcionário:");
-            Nome = Console.ReadLine();
+            nome = Console.ReadLine();
             Console.WriteLine("Idade:");
             Idade = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Rua:");
@@ -37,7 +37,7 @@ namespace posto_de_saude
 
         public void Listar()
         {
-            Console.WriteLine($"Nome: {Nome}\nIdade:{Idade}\nRua:{Rua}\n");
+            Console.WriteLine($":Número de prontuário \nNome:{nome}\nIdade:{Idade}\nRua:{Rua}\n");
         }
     }
 }

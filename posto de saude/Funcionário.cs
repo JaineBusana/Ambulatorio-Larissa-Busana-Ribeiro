@@ -15,7 +15,7 @@ namespace posto_de_saude
         public void Popular()
         {
             Console.WriteLine("Informe o nome do funcionário:");
-            Nome = Console.ReadLine();
+            nome = Console.ReadLine();
             Console.WriteLine("Idade:");
             Idade = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Rua:");
@@ -28,7 +28,7 @@ namespace posto_de_saude
 
         public void Listar()
         {
-            Console.WriteLine($"Nome: {Nome}\nIdade:{Idade}\nRua:{Rua}\nCargo:{Cargo}\nTurno:{Turno}");
+            Console.WriteLine($"Nome: {nome}\nIdade:{Idade}\nRua:{Rua}\nCargo:{Cargo}\nTurno:{Turno}");
         }
     }
 }
