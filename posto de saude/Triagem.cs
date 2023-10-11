@@ -9,6 +9,7 @@ namespace posto_de_saude
 {
     public class Triagem 
     {
+        public PessoaModel pessoaModel; 
         public Pessoa paciente; 
         private double perimetroCefalico;
 
@@ -43,9 +44,12 @@ namespace posto_de_saude
        
         public void Popular()
         {
-            Console.WriteLine("informe o nome do paciente:");
-            // vai ter que buscar o arquivo de pacientes
-            paciente.nome = Console.ReadLine();
+            //Console.WriteLine("informe o nome do paciente:");
+            //string nomePaciente = Console.ReadLine();
+            //int indice = pessoaModel.pacientes.IndexOf(nomePaciente);
+            
+            //// vai ter que buscar o arquivo de pacientes
+            //paciente.nome = Console.ReadLine();
             Console.WriteLine("informe o peso do paciente:");
             Peso = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("pressão arterial:");

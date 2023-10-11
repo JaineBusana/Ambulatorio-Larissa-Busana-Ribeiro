@@ -8,7 +8,7 @@ namespace posto_de_saude
 {
     public class PessoaModel
     {
-        private List<Pessoa> pacientes = new List<Pessoa>();
+        public List<Pessoa> pacientes = new List<Pessoa>();
 
         public void Create()
         {
