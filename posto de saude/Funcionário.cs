@@ -14,7 +14,7 @@ namespace posto_de_saude
 
         public void Popular()
         {
-            Console.WriteLine("Informe o nome do funcionário:");
+            Console.WriteLine("Informe o nome do material:");
             nome = Console.ReadLine();
             Console.WriteLine("Idade:");
             Idade = Convert.ToInt32(Console.ReadLine());
