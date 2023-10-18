@@ -8,8 +8,6 @@ namespace posto_de_saude
 {
     public class Medicamento : Material
     {
-        private string dosagem;
-        private string viaDeAdministracao;
        
         public void Popular()
         {

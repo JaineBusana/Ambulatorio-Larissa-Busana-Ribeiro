@@ -9,9 +9,6 @@ namespace posto_de_saude
     public class Funcionario : Pessoa
     {
 
-        public string Cargo { get; set; }
-        public string Turno { get; set; }
-
         public void Popular()
         {
             Console.WriteLine("Informe o nome do material:");

@@ -8,5 +8,7 @@ namespace posto_de_saude.Entity
 {
     internal class MedicamentoEntity
     {
+        private string dosagem { get; set; }
+        private string viaDeAdministracao { get; set; }
     }
 }

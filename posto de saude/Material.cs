@@ -22,10 +22,6 @@ namespace posto_de_saude
                 }
             }
         }
-        public int QtdEstoque { get; set; }
-        public string Indicacao { get; set; }
-        public int MesValidade { get; set; }
-        public int AnoValidade { get; set; }
 
         public void Popular()
         {

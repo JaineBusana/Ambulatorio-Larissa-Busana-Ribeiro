@@ -8,5 +8,7 @@ namespace posto_de_saude.Entity
 {
     internal class FuncionarioEntity
     {
+        public string Cargo { get; set; }
+        public string Turno { get; set; }
     }
 }
