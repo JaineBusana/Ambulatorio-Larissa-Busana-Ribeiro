@@ -2,6 +2,7 @@
 using posto_de_saude.Helpers;
 using posto_de_saude.Model;
 using System;
+using Dapper;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
