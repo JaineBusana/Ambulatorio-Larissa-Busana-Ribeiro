@@ -42,7 +42,7 @@ namespace posto_de_saude
 
         public void Read()
         {
-            foreach (var funcionario in funcionarios)
+            foreach (var funcionario in ListFuncionarioEntity())
             {
                 Console.Write($"Id: {funcionario.ID} - Turno: {funcionario.TURNO}- Cargo: {funcionario.CARGO}" +
                     $"- Nome:{funcionario.PESSOA.NOME}- Idade:{funcionario.PESSOA.IDADE}- Rua:{funcionario.PESSOA.RUA}");
@@ -50,20 +50,30 @@ namespace posto_de_saude
             }
         }
 
+        private FuncionarioEntity GetById()
+        {
+            return ListFuncionarioEntity().Where(f => f.ID == GetIndex()).ToList()[0];
+        }
         public void Update()
         {
-            Read();
-            Console.WriteLine("Digite o codigo do funcionário a ser alterado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            funcionarios[index].Popular();
+            FuncionarioEntity funcionario = Popular(GetById());
+            string sql = "UPDATE FUNCIONARIO SET CARGO = @CARGO, TURNO = @TURNO, PESSOA_ID = @PESSOA_ID WHERE ID = @ID";
+            int linhas = this.Execute(sql, funcionario);
+            Console.WriteLine($" Foi atualizado o funcionário");
         }
 
-        public void Delete()
+        private int GetIndex()
         {
             Read();
-            Console.WriteLine("Digite o codigo do funcionário a ser deletado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            funcionarios.RemoveAt(index);
+            Console.WriteLine("Digite o ID que deseja alterar:");
+            return Convert.ToInt32(Console.ReadLine());
+        }
+        public void Delete()
+        {
+            var parametro = new { ID = GetIndex() };
+            string sql = "DELETE FROM FUNCIONARIO WHERE ID = @ID";
+            this.Execute(sql, parametro);
+            Console.WriteLine("Funcionário deletado com sucesso");
         }
     }
 }
