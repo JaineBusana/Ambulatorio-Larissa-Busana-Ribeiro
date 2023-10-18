@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude.Entity
 {
-    internal class MedicamentoEntity
+    public class MedicamentoEntity
     {
-        private string dosagem { get; set; }
-        private string viaDeAdministracao { get; set; }
+        public string ID { get; set; }
+        public string DOSAGEM { get; set; }
+        public string VIA_DE_ADMINISTRACAO { get; set; }
     }
 }
