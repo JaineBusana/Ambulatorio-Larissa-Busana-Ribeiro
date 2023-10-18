@@ -19,14 +19,17 @@ namespace posto_de_saude
         }
         public void Read()
         {
+            PessoaModel pacientes = new PessoaModel();
             for (int i = 0; i < triagem.Count; i++)
             {
+                
                 Console.WriteLine(i);
                 triagem[i].Listar();
             }
         }
         public void Update()
-        {
+        {   
+            
             Read();
             Console.WriteLine("Digite o codigo do item a ser alterado");
             int index = Convert.ToInt32(Console.ReadLine());
