@@ -1,4 +1,5 @@
-﻿using System;
+﻿using posto_de_saude.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    public class MaterialModel
+    public class MaterialModel: ICrud
     {
         private List<Material> materiais = new List<Material>();
 

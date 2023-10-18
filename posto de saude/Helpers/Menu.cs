@@ -5,7 +5,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace posto_de_saude
+namespace posto_de_saude.Helpers
 {
     internal class Menu
     {
@@ -252,4 +252,4 @@ namespace posto_de_saude
 
     }
 }
-  
+
