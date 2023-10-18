@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using posto_de_saude.Model;
 
 namespace posto_de_saude.Helpers
 {

@@ -1,4 +1,7 @@
-﻿using posto_de_saude.Model;
+﻿using Dapper;
+using posto_de_saude.Entity;
+using posto_de_saude.Helpers;
+using posto_de_saude.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,23 +10,43 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    public class FuncionariosModel :ICrud
+    public class FuncionariosModel:DataBase, ICrud
     {
-        private List<Funcionario> funcionarios = new List<Funcionario>();
+     
+        private FuncionarioEntity Popular(FuncionarioEntity funcionario)
+        {
+            Console.WriteLine("Qual seu turno?");
+            funcionario.TURNO = Console.ReadLine();
+            Console.WriteLine("Qual seu cargo?");
+            funcionario.CARGO = Console.ReadLine();
+
+
+            return funcionario;
+        }
 
         public void Create()
         {
             Funcionario funcionario = new Funcionario();
             funcionario.Popular();
-            funcionarios.Add(funcionario);
+            string sql = "INSERT INTO FUNCIONARIO VALUE (NULL, @CARGO, @TURNO, @ @PESSOA_ID)";
+            int linhas = this.Execute(sql, funcionario);
+            Console.WriteLine($"Funcionário inserido com sucesso!");
+
+        }
+
+        private IEnumerable<FuncionarioEntity> ListFuncionarioEntity()
+        { 
+            string sql = "SELECT * FROM FUNCIONARIO F JOIN PESSOA P ON P.ID = F.PESSOA_ID";
+            return this.GetConnection().Query<FuncionarioEntity>(sql);
         }
 
         public void Read()
         {
-            for (int i = 0; i < funcionarios.Count; i++)
+            foreach (var funcionario in funcionarios)
             {
-                Console.Write(i);
-                funcionarios[i].Listar();
+                Console.Write($"Id: {funcionario.ID} - Turno: {funcionario.TURNO}- Cargo: {funcionario.CARGO}" +
+                    $"- Nome:{funcionario.PESSOA.NOME}- Idade:{funcionario.PESSOA.IDADE}- Rua:{funcionario.PESSOA.RUA}");
+                
             }
         }
 
