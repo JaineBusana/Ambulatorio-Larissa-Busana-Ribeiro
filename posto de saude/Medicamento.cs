@@ -13,7 +13,7 @@ namespace posto_de_saude
        
         public void Popular()
         {
-            Console.WriteLine("Informe o nome do material:");
+            Console.WriteLine("Informe o nome do medicamento:");
             Nome = Console.ReadLine();
 
             Console.WriteLine("Quantidade no estoque:");

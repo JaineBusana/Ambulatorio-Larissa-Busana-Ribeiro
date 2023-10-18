@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Text.Json.Serialization;
+using posto_de_saude.Helpers;
 
 namespace posto_de_saude
 {
