@@ -8,9 +8,10 @@ namespace posto_de_saude.Entity
 {
     internal class MaterialEntity
     {
-        public int QtdEstoque { get; set; }
-        public string Indicacao { get; set; }
-        public int MesValidade { get; set; }
-        public int AnoValidade { get; set; }
+        public int ID { get; set; }
+        public int NOME { get; set; }
+        public int QUANTIDADE{ get; set; }
+        public string INDICACAO { get; set; }
+        public int VALIDADE { get; set; }
     }
 }

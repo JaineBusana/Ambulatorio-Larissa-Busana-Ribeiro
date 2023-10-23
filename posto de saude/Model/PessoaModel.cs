@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 ﻿using Dapper;
 using posto_de_saude.Entity;
 using posto_de_saude.Helpers;
 using posto_de_saude.Model;
+=======
+﻿using posto_de_saude.Model;
+>>>>>>> 7df9a6db38f58f8849143da9e9c789c5d56c1717
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +16,11 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace posto_de_saude
 {
+<<<<<<< HEAD
     public class PessoaModel: DataBase, ICrud
+=======
+    public class PessoaModel: ICrud
+>>>>>>> 7df9a6db38f58f8849143da9e9c789c5d56c1717
     {
         //jsjs
         private PessoaEntity Popular(PessoaEntity pessoa)

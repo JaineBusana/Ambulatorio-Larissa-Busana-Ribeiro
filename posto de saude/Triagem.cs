@@ -13,11 +13,6 @@ namespace posto_de_saude
         public Pessoa paciente; 
         private double perimetroCefalico;
 
-        public double Peso { get; set; }
-        public double Pressao { get; set; }
-        public double Altura { get; set; }
-        public double Temperatura { get; set; }
-        public double Saturacao { get; set; }
         public double PerimetroCefalico 
         { 
             get
@@ -39,7 +34,6 @@ namespace posto_de_saude
                 }
             }
         }
-        public string Sintoma { get; set; }
 
        
         public void Popular()

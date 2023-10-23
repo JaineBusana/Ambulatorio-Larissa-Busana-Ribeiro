@@ -1,4 +1,6 @@
-﻿using posto_de_saude.Model;
+﻿using posto_de_saude.Entity;
+using posto_de_saude.Helpers;
+using posto_de_saude.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,40 +9,35 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    public class MaterialModel: ICrud
+    public class MaterialModel : DataBase, ICrud
     {
-        private List<Material> materiais = new List<Material>();
+        private MaterialEntity Popular(MaterialEntity material)
+        {
+            Console.WriteLine("Digite o nome");
+            material.NOME = Console.ReadLine();
+            Console.WriteLine("Digite a quantidade de estoque:");
+            material.QUANTIDADE= Convert.ToInt32(Console.ReadLine());
 
+
+            return material;
+        }
         public void Create()
         {
-            Material material = new Material();
-            material.Popular();
-            materiais.Add(material);
-        }
 
+        }
         public void Read()
         {
-            for (int i = 0; i < materiais.Count; i++)
-            {
-                Console.Write(i);
-                materiais[i].Listar();
-            }
+           
         }
 
         public void Update()
         {
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser alterado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            materiais[index].Popular();
+          
+            
         }
 
         public void Delete()
         {
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser deletado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            materiais.RemoveAt(index);
         }
     }
 }
