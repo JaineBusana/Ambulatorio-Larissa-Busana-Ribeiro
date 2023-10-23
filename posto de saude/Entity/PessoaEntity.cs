@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude.Entity
 {
-    internal class PessoaEntity
+    public class PessoaEntity
     {
-        public int Id { get; set; }
+        public int ID{ get; set; }
         public string NOME { get; set; }
         public int IDADE { get; set; }
         public string RUA { get; set; }

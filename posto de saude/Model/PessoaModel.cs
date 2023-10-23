@@ -40,25 +40,53 @@ namespace posto_de_saude
         }
         public void Read()
         {
-            foreach (var item in ListaPessoaEntity())
-           Console.WriteLine($"Número de prontuário {pessoa.ID} \nNome:{pessoa.NOME}\nIdade:{pessoa.IDADE}\nRua:{pessoa.RUA}\n");
-           
-        }
+            foreach (var pessoa in ListaPessoaEntity())
+            {
+           Console.WriteLine($"Número de prontuário {pessoa.ID}\nNome:{pessoa.NOME}\nIdade:{pessoa.IDADE}\nRua:{pessoa.RUA}\n");
 
-        public void Update()
+            }      
+        }
+        private int PegarProntuario()
         {
             Read();
-            Console.WriteLine("Digite o codigo do paciente a ser alterado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            pacientes[index].Popular();
+            Console.WriteLine("Digite o número do prontuário que deseja realizar alterações:");
+            return Convert.ToInt32(Console.ReadLine());
         }
+
+        public PessoaEntity PegarId(int id = 0)
+        {
+            if (id == 0)
+            {
+                id =PegarProntuario();
+            }
+            return ListaPessoaEntity().Where(p => p.ID == id).ToList()[0];
+        }
+
+        //private static void UpdatePessoaNome(PessoaEntity pessoa)
+        //{
+        //    Console.WriteLine($"Digite o novo nome para {pessoa.NOME}");
+        //    pessoa.NOME = Console.ReadLine();
+        //}
+        //private static void UpdatePessoaIdade(PessoaEntity pessoa)
+        //{
+        //    Console.WriteLine($"Digite a nova idade para {pessoa.IDADE}");
+        //    pessoa.IDADE = Convert.ToInt32(Console.ReadLine());
+        //}
+        //private static void UpdatePessoaRua(PessoaEntity pessoa)
+        //{
+        //    Console.WriteLine($"Digite a nova rua para {pessoa.RUA}");
+        //    pessoa.RUA = Console.ReadLine();
+        //}
+
+        //public void Update()
+        //{
+
+        //}
 
         public void Delete()
         {
             Read();
-            Console.WriteLine("Digite o codigo do paciente a ser deletado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            pacientes.RemoveAt(index);
+           
         }
     }
 }
