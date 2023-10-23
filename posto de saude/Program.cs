@@ -7,8 +7,7 @@ namespace posto_de_saude
 {
     internal class Program
     {
-        List<Funcionario> funcionarios = new List<Funcionario>();
-
+        
 
     static void Main(string[] args)
     {
@@ -17,7 +16,12 @@ namespace posto_de_saude
             //    pessoas1.Nome = "Thiago";
             //    pessoas1.Rua = "Rua João";
             //    Funcionario funcionario1 = new Funcionario("João", 20, "Rua Humaitá", "Técnico de Enfermagem", "Matutino", 1235);
-            Menu.MostrarMenuPrincipal();
+            //Menu.MostrarMenuPrincipal();
+
+            PessoaModel pessoa = new PessoaModel();
+            pessoa.Create();
+            pessoa.Read();
+
     }
     }
     // menu1: visualizar menu funcionario, visualizar menu produto, visualizar menu medicamento, visualizar menu triagem

@@ -8,8 +8,11 @@ namespace posto_de_saude.Entity
 {
     internal class PessoaEntity
     {
-        public double Idade { get; set; }
-        public string Rua { get; set; }
+
+        public int ID { get; set; }
+        public string NOME { get; set; }
+        public double IDADE { get; set; }
+        public string RUA { get; set; }
 
     }
 }
