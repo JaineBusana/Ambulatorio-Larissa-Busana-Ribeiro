@@ -7,6 +7,21 @@ namespace posto_de_saude
 {
     internal class Program
     {
+<<<<<<< HEAD
+
+        static void Main(string[] args)
+        {
+            PessoaModel model = new PessoaModel();
+            model.Create();
+            Console.Clear();
+            model.Read();
+            Console.Clear();
+            model.Update();
+            Console.Clear();
+            model.Delete();
+
+        }
+=======
         
 
     static void Main(string[] args)
@@ -22,10 +37,8 @@ namespace posto_de_saude
             pessoa.Create();
             pessoa.Read();
 
+>>>>>>> 16eed656d361794b471a5de78dc9cd7247b6d4c9
     }
-    }
-    // menu1: visualizar menu funcionario, visualizar menu produto, visualizar menu medicamento, visualizar menu triagem
-    // menu funcionario: CRUD
 }
 
    

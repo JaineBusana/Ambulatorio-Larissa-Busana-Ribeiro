@@ -11,7 +11,7 @@ namespace posto_de_saude.Helpers
 {
     public class DataBase
     {
-        protected string conectionString = "Server=localhost;Database=BANCO_AMBULATORIO;User=root;Password=root;";
+        protected string conectionString = "Server=localhost;Database=banco_ambulatorio;User=root;Password=root;";
 
 
         protected MySqlConnection GetConnection()

@@ -1,5 +1,9 @@
+
+﻿using posto_de_saude.Entity;
+
 ﻿using Dapper;
 using posto_de_saude.Entity;
+
 using posto_de_saude.Helpers;
 using posto_de_saude.Model;
 using System;
@@ -42,4 +46,6 @@ namespace posto_de_saude
             throw new NotImplementedException();
         }
     }
+
 }
+

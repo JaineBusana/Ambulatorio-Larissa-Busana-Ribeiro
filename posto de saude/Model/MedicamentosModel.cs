@@ -7,6 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
+//namespace posto_de_saude
+//{
+//    public class MedicamentosModel: ICrud
+//    {
+    
+//     private List<Medicamento> medicamentos = new List<Medicamento>();
+
+//      public void Create()
+//        {
+//            Medicamento medicamento = new Medicamento();
+//            medicamento.Popular();
+//            medicamentos.Add(medicamento);
+//        }
+
+//        public void Read()
+//        {
+//            for (int i = 0; i < medicamentos.Count; i++)
+//            {
+//                Console.Write(i);
+//                medicamentos[i].Listar();
+//            }
+//        }
+
+//        public void Update()
+//        {
+//            Read();
+//            Console.WriteLine("Digite o código do medicamento a ser alterado:");
+//            int index = Convert.ToInt32(Console.ReadLine());
+//            medicamentos[index].Popular();
+//        }
+
+//        public void Delete()
+//        {
+//            Read();
+//            Console.WriteLine("Digite o código do medicamento a ser deletado:");
+//            int index = Convert.ToInt32(Console.ReadLine());
+//            medicamentos.RemoveAt(index);
+//        }
+
+//    }
+//}
+=======
 namespace posto_de_saude
 {
     public class MedicamentosModel : DataBase, ICrud
@@ -45,3 +88,4 @@ namespace posto_de_saude
 
     }
 }
+>>>>>>> 16eed656d361794b471a5de78dc9cd7247b6d4c9
