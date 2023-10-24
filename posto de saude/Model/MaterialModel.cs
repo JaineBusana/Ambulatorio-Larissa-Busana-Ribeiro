@@ -1,4 +1,7 @@
-﻿using posto_de_saude.Model;
+﻿using Dapper;
+using posto_de_saude.Entity;
+using posto_de_saude.Helpers;
+using posto_de_saude.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,40 +10,35 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude
 {
-    public class MaterialModel: ICrud
+    public class MaterialModel : DataBase ICrud
     {
-        private List<Material> materiais = new List<Material>();
-
         public void Create()
         {
-            Material material = new Material();
-            material.Popular();
-            materiais.Add(material);
-        }
-
-        public void Read()
-        {
-            for (int i = 0; i < materiais.Count; i++)
-            {
-                Console.Write(i);
-                materiais[i].Listar();
-            }
-        }
-
-        public void Update()
-        {
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser alterado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            materiais[index].Popular();
+            throw new NotImplementedException();
         }
 
         public void Delete()
         {
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser deletado:");
-            int index = Convert.ToInt32(Console.ReadLine());
-            materiais.RemoveAt(index);
+            throw new NotImplementedException();
+        }
+
+        public void Read()
+        {
+            foreach (var material in ListMaterial())
+            {
+                Console.WriteLine($"{material.ID} - {material.NOME}-{material.QUANTIDADE}-{material.INDICACAO}-{material.VALIDADE}");
+            }
+        }
+        private IEnumerable<MaterialEntity> ListMaterial()
+        {
+            string sql = "SELECT * FROM RESIDUO";
+            return this.GetConnection().Query<MaterialEntity>(sql);
+        }
+
+
+
+        public void Update()
+        {
+            throw new NotImplementedException();
         }
     }
-}
