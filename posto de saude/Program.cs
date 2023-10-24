@@ -14,6 +14,10 @@ namespace posto_de_saude
             model.Create();
             Console.Clear();
             model.Read();
+            Console.Clear();
+            model.Update();
+            Console.Clear();
+            model.Delete();
 
         }
     }
