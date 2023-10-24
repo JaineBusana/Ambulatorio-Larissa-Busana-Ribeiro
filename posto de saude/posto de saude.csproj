@@ -9,11 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
+
     <PackageReference Include="Dapper" Version="2.1.15" />
-=======
+
     <PackageReference Include="Dapper" Version="2.1.11" />
->>>>>>> 7df9a6db38f58f8849143da9e9c789c5d56c1717
     <PackageReference Include="MySql.Data" Version="8.1.0" />
   </ItemGroup>
 

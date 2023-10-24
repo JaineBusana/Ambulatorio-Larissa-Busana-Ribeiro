@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 ﻿using Dapper;
 using posto_de_saude.Entity;
 using posto_de_saude.Helpers;
 using posto_de_saude.Model;
-=======
-﻿using posto_de_saude.Model;
->>>>>>> 7df9a6db38f58f8849143da9e9c789c5d56c1717
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,21 +12,17 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace posto_de_saude
 {
-<<<<<<< HEAD
     public class PessoaModel: DataBase, ICrud
-=======
-    public class PessoaModel: ICrud
->>>>>>> 7df9a6db38f58f8849143da9e9c789c5d56c1717
     {
-        //jsjs
+       
         private PessoaEntity Popular(PessoaEntity pessoa)
         {
             Console.WriteLine("Informe o nome do paciente:");
-            pessoa.NOME = Console.ReadLine();
+            pessoa.NOME = Util.MudarInformacoes(pessoa.NOME);
             Console.WriteLine("Idade:");
-            pessoa.IDADE = Convert.ToInt32(Console.ReadLine());
+            pessoa.IDADE = Util.MudarInformacoes(pessoa.IDADE);
             Console.WriteLine("Rua:");
-            pessoa.RUA = Console.ReadLine();
+            pessoa.RUA = Util.MudarInformacoes(pessoa.RUA);
 
             return pessoa;
         }
@@ -57,7 +49,7 @@ namespace posto_de_saude
         private int PegarProntuario()
         {
             Read();
-            Console.WriteLine("Digite o número do prontuário que deseja realizar alterações:");
+            Console.WriteLine("Digite o número do prontuário:");
             return Convert.ToInt32(Console.ReadLine());
         }
 
@@ -70,31 +62,22 @@ namespace posto_de_saude
             return ListaPessoaEntity().Where(p => p.ID == id).ToList()[0];
         }
 
-        //private static void UpdatePessoaNome(PessoaEntity pessoa)
-        //{
-        //    Console.WriteLine($"Digite o novo nome para {pessoa.NOME}");
-        //    pessoa.NOME = Console.ReadLine();
-        //}
-        //private static void UpdatePessoaIdade(PessoaEntity pessoa)
-        //{
-        //    Console.WriteLine($"Digite a nova idade para {pessoa.IDADE}");
-        //    pessoa.IDADE = Convert.ToInt32(Console.ReadLine());
-        //}
-        //private static void UpdatePessoaRua(PessoaEntity pessoa)
-        //{
-        //    Console.WriteLine($"Digite a nova rua para {pessoa.RUA}");
-        //    pessoa.RUA = Console.ReadLine();
-        //}
+        public void Update()
+        {
+            PessoaEntity pessoa = Popular(PegarId());
+            string sql = "UPDATE PESSOA SET NOME=@NOME, IDADE=@IDADE, RUA=@RUA";
+            int executar=this.Execute(sql,pessoa);
+            Console.WriteLine("Atualizado!!");
+        }
 
-        //public void Update()
-        //{
-
-        //}
-
+   
         public void Delete()
         {
-            Read();
-           
+            var parameters = new { ID = PegarProntuario() };
+            string sql = "DELETE FROM PESSOA WHERE ID = @ID";
+            this.Execute(sql,parameters);
+            Console.WriteLine("Deletado!!");
+
         }
     }
 }

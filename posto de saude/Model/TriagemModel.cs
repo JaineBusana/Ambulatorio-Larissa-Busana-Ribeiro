@@ -5,45 +5,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace posto_de_saude
-{
-    internal class TriagemModel: ICrud
-    {
-        private List<Triagem> triagem = new List<Triagem>();
+//namespace posto_de_saude
+//{
+//    internal class TriagemModel: ICrud
+//    {
+//        private List<Triagem> triagem = new List<Triagem>();
 
 
-        public void Create()
-        {
-            Triagem cadastro = new Triagem();
-            cadastro.Popular();
-            triagem.Add(cadastro);   
-        }
-        public void Read()
-        {
-            PessoaModel pacientes = new PessoaModel();
-            for (int i = 0; i < triagem.Count; i++)
-            {
+//        public void Create()
+//        {
+//            Triagem cadastro = new Triagem();
+//            cadastro.Popular();
+//            triagem.Add(cadastro);   
+//        }
+//        public void Read()
+//        {
+//            PessoaModel pacientes = new PessoaModel();
+//            for (int i = 0; i < triagem.Count; i++)
+//            {
                 
-                Console.WriteLine(i);
-                triagem[i].Listar();
-            }
-        }
-        public void Update()
-        {   
+//                Console.WriteLine(i);
+//                triagem[i].Listar();
+//            }
+//        }
+//        public void Update()
+//        {   
             
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser alterado");
-            int index = Convert.ToInt32(Console.ReadLine());
-            triagem[index].Popular();
-        }
+//            Read();
+//            Console.WriteLine("Digite o codigo do item a ser alterado");
+//            int index = Convert.ToInt32(Console.ReadLine());
+//            triagem[index].Popular();
+//        }
 
-        public void Delete()
-        {
-            Read();
-            Console.WriteLine("Digite o codigo do item a ser deletado");
-            int index = Convert.ToInt32(Console.ReadLine());
-            triagem.RemoveAt(index);
-        }
+//        public void Delete()
+//        {
+//            Read();
+//            Console.WriteLine("Digite o codigo do item a ser deletado");
+//            int index = Convert.ToInt32(Console.ReadLine());
+//            triagem.RemoveAt(index);
+//        }
 
-    }
-}
+//    }
+//}
