@@ -31,7 +31,7 @@ namespace posto_de_saude
         }
         private IEnumerable<MaterialEntity> ListMaterial()
         {
-            string sql = "SELECT * FROM RESIDUO";
+            string sql = "SELECT * FROM MATERIAL";
             return this.GetConnection().Query<MaterialEntity>(sql);
         }
 
@@ -42,3 +42,4 @@ namespace posto_de_saude
             throw new NotImplementedException();
         }
     }
+}
