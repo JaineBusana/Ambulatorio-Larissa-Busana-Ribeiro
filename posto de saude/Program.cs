@@ -7,6 +7,7 @@ namespace posto_de_saude
 {
     internal class Program
     {
+<<<<<<< HEAD
 
         static void Main(string[] args)
         {
@@ -20,6 +21,23 @@ namespace posto_de_saude
             model.Delete();
 
         }
+=======
+        
+
+    static void Main(string[] args)
+    {
+            //    Pessoa pessoas1 = new Pessoa();
+            //    pessoas1.Idade = 20;
+            //    pessoas1.Nome = "Thiago";
+            //    pessoas1.Rua = "Rua João";
+            //    Funcionario funcionario1 = new Funcionario("João", 20, "Rua Humaitá", "Técnico de Enfermagem", "Matutino", 1235);
+            //Menu.MostrarMenuPrincipal();
+
+            PessoaModel pessoa = new PessoaModel();
+            pessoa.Create();
+            pessoa.Read();
+
+>>>>>>> 16eed656d361794b471a5de78dc9cd7247b6d4c9
     }
 }
 
