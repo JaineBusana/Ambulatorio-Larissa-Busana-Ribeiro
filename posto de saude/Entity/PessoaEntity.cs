@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace posto_de_saude.Entity
 {
-    internal class PessoaEntity
+    public class PessoaEntity
     {
 
         public int ID { get; set; }
